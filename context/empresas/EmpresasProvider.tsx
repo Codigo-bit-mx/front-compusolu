@@ -50,22 +50,29 @@ export const EmpresasProvider: FC<Props> = ({children}) => {
                 payload: respuesta.data.tiposall
             })
         } catch (err) {
-            if(!err){
+            if(err){
+              dispatch({
+                   type: 'ALARMA_ACTIVA',
+                   payload: {msg: 'Problemas de conexion tipo', tipoalarma: 'error'}
+            })
+            setTimeout(() => {
+                dispatch({
+                    type:'ALARMA_DESACTIVA'
+                })
+            }, 3000);
+        } else {
                 dispatch({
                    type: 'ALARMA_ACTIVA',
-                   payload: {msg: 'Problemas de conexion', tipoalarma: 'error'}
-              })}
+                   payload: {msg: err.response.data.msg, tipoalarma: 'error'}
+               })
+               
+               setTimeout(() => {
+                   dispatch({
+                       type:'ALARMA_DESACTIVA'
+                   })
+               }, 3000); 
+            }
       
-              dispatch({
-                 type: 'ALARMA_ACTIVA',
-                 payload: {msg: err.respuesta.data.msg, tipoalarma: 'error'}
-             })
-             
-             setTimeout(() => {
-                 dispatch({
-                     type:'ALARMA_DESACTIVA'
-                 })
-             }, 3000); 
         }
     }
 
@@ -80,25 +87,35 @@ export const EmpresasProvider: FC<Props> = ({children}) => {
             })
 
         }catch(err){
+            
             if(!err){
                 dispatch({
                    type: 'ALARMA_ACTIVA',
-                   payload: {msg: 'Problemas de conexion', tipoalarma: 'error'}
-              })}
-      
-              dispatch({
-                 type: 'ALARMA_ACTIVA',
-                 payload: {msg: err.respuesta.data.msg, tipoalarma: 'error'}
-             })
-             
-             setTimeout(() => {
-                 dispatch({
-                     type:'ALARMA_DESACTIVA'
+                   payload: {msg: 'Problemas de conexion empresa', tipoalarma: 'error'}
+              })
+              setTimeout(() => {
+                dispatch({
+                    type:'ALARMA_DESACTIVA'
+                })
+            }, 3000);
+            } else {
+
+                  dispatch({
+                     type: 'ALARMA_ACTIVA',
+                     payload: {msg: err.response.data.msg, tipoalarma: 'error'}
                  })
-             }, 3000);
+                 
+                 setTimeout(() => {
+                     dispatch({
+                         type:'ALARMA_DESACTIVA'
+                     })
+                 }, 3000);
+              }
+      
         }
 
     }
+
 
     const registrar_empresa = async(data: Empresa) => {
         try{
@@ -126,7 +143,7 @@ export const EmpresasProvider: FC<Props> = ({children}) => {
  
          dispatch({
             type: 'ALARMA_ACTIVA',
-            payload: {msg: err.respuesta.data.msg, tipoalarma: 'error'}
+            payload: {msg: err.response.data.msg, tipoalarma: 'error'}
         })
         
         setTimeout(() => {
@@ -170,7 +187,7 @@ export const EmpresasProvider: FC<Props> = ({children}) => {
       
               dispatch({
                  type: 'ALARMA_ACTIVA',
-                 payload: {msg: err.respuesta.data.msg, tipoalarma: 'error'}
+                 payload: {msg: err.response.data.msg, tipoalarma: 'error'}
              })
              
              setTimeout(() => {
@@ -209,7 +226,7 @@ export const EmpresasProvider: FC<Props> = ({children}) => {
 
               dispatch({
                 type: 'ALARMA_ACTIVA',
-                payload: {msg: err.respuesta.data.msg, tipoalarma: 'error'}
+                payload: {msg: err.response.data.msg, tipoalarma: 'error'}
             })
 
             setTimeout(() => {

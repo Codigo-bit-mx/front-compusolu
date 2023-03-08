@@ -57,7 +57,7 @@ export default function BasicTable() {
    
    { !empresas.length || empresas === undefined? (
      <ContenedorTable sx={{textAlign:'center'}}>
-       <Typography>
+       <Typography sx={{fontSize: 16, padding: 2}}>
            <FormattedMessage
                     id='app.tablesintitle'
                     defaultMessage="No se encuentran empresas registradas"

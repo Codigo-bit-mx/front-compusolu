@@ -2,7 +2,7 @@ import axios from 'axios'
 
 
 const testApi = axios.create({
-    baseURL: 'http://192.168.0.8:8080/', 
+    baseURL: 'https://back-compusolu-production.up.railway.app', 
     headers: {
         "Content-Type": "multipart/form-data"
     }
