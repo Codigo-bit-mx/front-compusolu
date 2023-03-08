@@ -1,0 +1,37 @@
+{
+    "app.hello": "Hello",
+    "app.admin": "administrator",
+
+    "app.process.now": "Current processes",
+    "app.energy":"Energy use",
+    "app.factur": "Bills", 
+    "app.emply": "Employees",
+
+    "app.welcome": "Dashboard", 
+    "app.name": "Name company", 
+    "app.date": "Constitution date",
+    "app.company" : "Company type", 
+    "app.coment": "Coment",
+    "app.accion": "Action",
+
+    "app.tablesintitle": "No registered companies found",
+
+    "app.entrydolar": "Cash inflow", 
+    "app.elementprimary": "Primordial elements",
+    "app.performance": "Performance",
+    "app.map": "Product map",
+    "app.processwork": "Work processes", 
+    "aoo.bill": "Bills", 
+    "app.profits": "Profits",
+
+    "app.home": "Home", 
+    "app.send": "Send",
+    "app.inventory": "Inventory", 
+    "app.indicators": "Indicators", 
+    "app.customers": "Customers",
+    "app.providers": "Providers", 
+    "app.employees": "Employees",
+    "app.setting": "Setting",
+    "app.sign": "Sign Log"
+
+}

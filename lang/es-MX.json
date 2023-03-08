@@ -1,0 +1,37 @@
+{   
+    "app.hello": "Hola, buenas",
+    "app.admin": "administrador",
+
+    "app.process.now": "Procesos actuales",
+    "app.energy":"Uso de energia",
+    "app.factur": "Total de facturas", 
+    "app.emply": "Empleados",
+
+
+    "app.welcome": "Tablero principal",
+    "app.name": "Nombre de la empresa", 
+    "app.date": "Fecha de constitucion",
+    "app.company" : "Tipo de empresa", 
+    "app.coment": "Comentario",
+    "app.accion": "Acciones",
+    
+    "app.tablesintitle": "No se encuentran empresas registradas",
+
+    "app.entrydolar": "Entrada de Efectivo", 
+    "app.elementprimary": "Elementos promordiales",
+    "app.performance": "Rendimiento",
+    "app.map": "Mapa de produccion",
+    "app.processwork": "Procesos de trabajo", 
+    "aoo.bill": "Gastos", 
+    "app.profits": "Ganacias",
+
+    "app.home": "Inicio", 
+    "app.send": "Envios",
+    "app.inventory": "Inventario", 
+    "app.indicators": "Indicadores", 
+    "app.customers": "Clientes",
+    "app.providers": "Provedores", 
+    "app.employees": "Empleados",
+    "app.setting": "Configuración",
+    "app.sign": "Cerrar session"
+}
