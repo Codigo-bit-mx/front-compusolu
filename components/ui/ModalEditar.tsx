@@ -101,7 +101,7 @@ export const ModalEditar: FC<Props> = ({open, title, data}) => {
                             defaultValue={data.tipo._id}
                             render={({field}) => 
                             <Select
-                            sx={{width: '100px'}}
+                            sx={{width: '100%'}}
                                 {...field}
                                 labelId="demo-simple-select-label"
                                 {...register('tipo', {

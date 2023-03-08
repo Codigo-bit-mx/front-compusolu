@@ -98,7 +98,7 @@ export const ModalComponent: FC<Props> = ({open, title}) => {
                             defaultValue=''
                             render={({field}) => 
                             <Select
-                            sx={{width: '100px'}}
+                            sx={{width: '100%'}}
                                 {...field}
                                 labelId="demo-simple-select-label"
                                 {...register('tipo', {
