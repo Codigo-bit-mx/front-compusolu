@@ -3,6 +3,7 @@ import {createContext} from "react"
 import { Empresa, Tipo } from "../../utils/Data"
 
 interface ContextProps {
+    tipos: Tipo[]
     empresas: Empresa[]
     mensaje: string
     registro_nuevo_empresa: boolean
